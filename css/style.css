@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* 
+font-family: 'Mochiy Pop P One', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu' , sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-decoration: none;
+  background: var(--bg);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+:root {
+  --bg: #080808;
+  --second-bg: #161212;
+  --third-bg: #2e2929;
+  --main-color: #0ef;
+  --box: #292525;
+}
+section{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+span {
+  color: var(--main-color);
+}
+.title {
+  font-size: 2.8rem;
+  font-family: 'Ubuntu' , sans-serif;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.title::before{
+  content: "";
+  position: absolute;
+  background: white;
+  width: 10rem;
+  height: .2rem;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+}
+.title::after {
+  position: absolute;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: var(--main-color);
+  left: 50%;
+  bottom: -14px;
+  transform: translateX(-50%);
+  padding: 0 6px;
+}
+.btn {
+  background: var(--main-color);
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: .5s ease;
+}
+.btn:hover{
+  box-shadow: none;
+}
+/* ===================header==================== */
+.header {
+  background: var(--bg);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.h-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6rem 0;
+}
+nav.header-nav a, .logo a:hover {
+  color: white;
+}
+.h-main-title{
+  margin-bottom: 0rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+span.logo-title {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  display: flex;
+  justify-content: end;
+  margin-top: -0.4rem;
+}
+.logo-title a, .logo-title a:hover  {
+  color: var(--main-color);
+}
+nav.header-nav a {
+  padding: 0 .5rem;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+nav.header-nav a:hover{
+  color: var(--main-color);
+}
+nav.header-nav a:nth-child(1){
+  color: var(--main-color);
+}
+nav.header-nav a::before {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: -6px;
+  transition: 0.5s ease;
+}
+nav.header-nav a:hover::before{
+  width: 75%;
+}
+#menu-icon{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* =============Home Section Design=========== */
+section#home {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+img.home-img {
+  width: 93%;
+  height: 100%;
+}
+.home-content h3 {
+  font-weight: 700;
+}
+
+.home-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.home-img{
+  margin-bottom: -3rem;
+}
+.social-media a {
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: .2rem solid var(--main-color);
+  font-size: 1.3rem;
+  margin-right: .5rem;
+  box-shadow: 0 0 1rem --main-color;
+  transition: .5s ease;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.social-media a:hover{
+  background: var(--main-color);
+  color: var(--bg);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* =====================About section Design============== */
+.about .title::after{
+  content: "who i am";
+  background: var(--second-bg);
+}
+.about{
+  background: var(--second-bg);
+}
+
+.about-content h3 {
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-weight: 500;
+  color: #dbdbdb;
+}
+.about-content a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.about-more-btn{
+  color: var(--main-color);
+}
+/* =====================skills section Design hare============== */
+.skills .title::after{
+  content: "what i know";
+  background: var(--bg);
+}
+.skills{
+  background: var(--bg);
+}
+.extra-font{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.line {
+  width: 100%;
+  height: .3rem;
+  background: #00eeff63;
+  margin-bottom: 1.2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.line::after {
+  content: '';
+  height: 100%;
+  background: var(--main-color);
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.html::after {
+  width: 85%;
+}
+.css::after {
+  width: 80%;
+}
+.Javascript::after {
+  width: 75%;
+}
+.Bootstrap::after {
+  width: 90%;
+}
+.Python::after {
+  width: 80%;
+}
+/* =====tab section=========== */
+.tab-title {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p.tab-links {
+  margin-right: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+p.tab-links::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: .2rem;
+  background: var(--main-color);
+  bottom: -6px;
+  left: 0;
+  transition: .5s;
+}
+p.tab-links:hover::after{
+  width: 50%;
+}
+p.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul {
+  padding: 0;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+/* =============services section design start hare========= */
+.services .title::after{
+  content: "what i provide";
+  background: var(--bg);
+}
+.services{
+  background: var(--bg);
+}
+.services-box {
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--box);
+  border-radius: 1rem;
+  border: .2rem solid #292525;
+  transition: .5s;
+}
+.services-box:hover {
+border: .2rem solid var(--main-color);
+transform: translateY(-10px);
+}
+.services-box i {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+.services-box h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+/* =============portfolio section design start hare========= */
+.portfolio .title::after{
+  content: "latest project";
+  background: var(--second-bg);
+}
+.portfolio{
+  background: var(--second-bg);
+}
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.portfolio-box img {
+  height: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  transition: .5s ease;
+  opacity: .7;
+}
+.portfolio-box:hover img{
+  transform: scale(1.1);
+}
+.portfolio-layer {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  color: white;
+  border-radius: 1rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+  transform: translateY(0);
+}
+.portfolio-layer h2 {
+  font-weight: 700;
+}
+
+.portfolio-layer p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.portfolio-layer a {
+  font-size: 1.5rem;
+  background: white;
+  color: black;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* =============process-box section design start hare========= */
+.process {
+  background: var(--bg);
+}
+.process-wrap::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--box);
+  left: 50%;
+  top: 0;
+  margin-left: -3px;
+}
+.process .title::after{
+  content: "follow the step's";
+  background: var(--second-bg);
+}
+.process-wrap{
+  position: relative;
+}
+.process-box{
+  width: 50%;
+  padding: 3rem;
+  position: relative;
+  z-index: 998;
+  transition: .5s;
+}
+.process-box:hover{
+  transform: translateY(-10px);
+}
+.text-box {
+  background: var(--box);
+  padding: 20px 30px;
+  border-radius: 6px;
+  transition: .5s;
+}
+.text-box:hover{
+  transform: translateY(-10px);
+}
+.text-box h4{
+  position: relative;
+  margin-left: 1.2rem;
+}
+.text-box h4::before{
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--main-color);
+  position: absolute;
+  top: 7px;
+  left: -21px;
+}
+.process-box-left{
+  left: 0;
+}
+.process-box-left{
+  left: 50%;
+}
+.process-box img {
+  position: absolute;
+  width: 52px;
+  top: 83px;
+  right: -26px;
+  z-index: 998;
+  background: var(--box);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.process-box-left img {
+  left: -27px;
+}
+.process-box-right-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 88px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid var(--box);
+  left: 34px;
+}
+.process-box-left-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 88px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--box);
+  right: 34px;
+}
+/* =============testimonial section design start hare========= */
+.testimonial .title::after{
+  content: "what say's client";
+  background: var(--second-bg);
+}
+.testimonial{
+  background: var(--second-bg);
+}
+.carousel-item img {
+  width: 10rem;
+  height: 10rem;
+}
+.carousel-item {
+  padding: 4rem 7rem;
+}
+.carousel-item h5 {
+  color: white;
+}
+.carousel-item p{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: .9rem;
+  color: white;
+}
+/* =============Gallery section design start hare========= */
+.gallery {
+  background: var(--bg);
+}
+.gallery .title::after{
+  content: "Achievement";
+  background: var(--bg);
+}
+img.img-with {
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+  border-radius: .5rem;
+  transition: .5s ease;
+}
+
+img.img-with:hover {
+  transform: scale(1.1);
+}
+/* =============certificate section design start hare========= */
+.certificate .title::after{
+  content: "Gain";
+  background: var(--bg);
+}
+.certificate-height{
+  height: 29rem !important;
+}
+/* =============Contact section design start hare========= */
+.contact .title::after{
+  content: "get in touch";
+  background: var(--second-bg);
+}
+.contact{
+  background: var(--second-bg);
+}
+.sub-title h3 {
+  font-family: 'Mochiy Pop P One';
+  margin-bottom: 3rem;
+}
+.contact-left p {
+  font-size: 1.2rem;
+}
+
+.contact-left p i {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-box input {
+  width: 49%;
+  padding: .3rem .7rem;
+  border-radius: .4rem;
+  outline: none;
+  background: #292525;
+  color: white;
+}
+.input-box-extra input,textarea{
+  width: 100%;
+  margin-top: 1rem;
+  padding: .3rem .7rem;
+  outline: none;
+  border-radius: .4rem;
+  background: #292525;
+  color: white;
+}
+
+/* ================ footer Start hare=================== */
+footer {
+  background: var(--bg);
+}
+
+.footer-left p {
+  margin: 0;
+  padding: 1rem;
+  font-size: .9rem;
+}
+.footer-right a i {
+  font-size: 2.4rem;
+  background: var(--main-color);
+  padding: 0.3rem;
+  border-radius: 30%;
+  margin-top: .2rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  color: var(--bg);
+}

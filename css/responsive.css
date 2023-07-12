@@ -1,0 +1,165 @@
+  /* ====================== laptop frndly -responsive max-width: 768px================== */
+  @media (max-width: 991px){
+    #menu-icon{
+      display: block;
+    }
+    .header-nav{
+      position: absolute;
+      background: var(--bg);
+      width: 100%;
+      top: 100%;
+      padding-left: 2rem;
+      left: 0;
+      display: none;
+    }
+    .header-nav.active{
+      display: block;
+    }
+    .header-nav a{
+      display: flex;
+      padding: 0.8rem !important;
+      justify-content: center;
+    }
+    nav.header-nav a:nth-child(1){
+      padding-top: 3rem !important;
+    }
+    nav.header-nav a::before {
+      display: none;
+    }
+    nav.header-nav a:hover::before{
+      display: none;
+    }
+    .home-responsive{
+      padding-top: 5rem;
+    }
+    .home-img {
+      margin-bottom: -2rem;
+  }
+    .home-content h3 {
+      font-size: 1.5rem;
+    }
+    
+    .home-content h1 {
+      font-size: 2.3rem;
+    }
+    section#home {
+      height: 67vh;
+  }
+    /* ========================skills section================= */
+    .skills-right h5 {
+      font-size: 1.3rem;
+  }
+  p.tab-links {
+      font-size: .9rem;
+  }
+  .services-box h1 {
+    font-size: 1.7rem;
+  }
+  .contact-left p {
+    font-size: 1.1rem;
+  }
+  .social-media a {
+    margin-bottom: 1rem;
+  }
+  }
+  /* ====================== mobile frndly -responsive max-width: 768px================== */
+  @media (max-width: 768px)
+  {
+    /* ====================== header-responsive================== */
+  
+    #menu-icon{
+      display: block;
+    }
+    .header-nav{
+      position: absolute;
+      background: var(--bg);
+      width: 100%;
+      top: 100%;
+      padding-left: 2rem;
+      left: 0;
+      display: none;
+    }
+    .header-nav.active{
+      display: block;
+    }
+    .header-nav a{
+      display: flex;
+      padding: 0.8rem !important;
+      justify-content: center;
+    }
+    nav.header-nav a:nth-child(1){
+      padding-top: 3rem !important;
+    }
+    nav.header-nav a::before {
+      display: none;
+    }
+    nav.header-nav a:hover::before{
+      display: none;
+    }
+  
+  h2.h-main-title {
+      font-size: 2rem;
+  }
+  
+  span.logo-title {
+      font-size: .8rem;
+  }
+  /* ====================== home-responsive================== */
+  section#home {
+    height: 100%;
+}
+  .home-responsive {
+    padding-top: 0rem;
+}
+img.home-img {
+  width: 80%;
+}
+  .home-padding {
+    padding-top: 4rem!important;
+  }
+  .home-responsive{
+    flex-direction: column-reverse;
+  }
+  .home-content-responsive{
+    margin-top: 5rem;
+  }
+  .home-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home-content p {
+    font-size: 1rem;
+  }
+  .skills-right h5 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  /* ====================== procces box================== */
+  .process-wrap::after{
+    left: 30px;
+  }
+  .process-box {
+    width: 100%;
+    margin-left: 2.5rem;
+  }
+  .process-box-left{
+    left: 0;
+  }
+  .process-box-left img, .process-box-right img{
+    left: -30px;
+  }
+  .process-box-left-arrow{
+    border-right: 15px solid var(--box);
+    left: 33px;
+    border-left: 0;
+  }
+  p.tab-links {
+    font-size: 1.5rem;
+  }
+  
+  
+  }
